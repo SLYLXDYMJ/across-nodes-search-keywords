@@ -116,7 +116,7 @@ export default {
       extensions: [ '.js', '.jsx', '.es6', '.es', '.mjs', '.vue', '.jpg', '.png', '.webp', '.bmp' ]
     }),
     css({
-      output: `${ NAME }.css`
+      output: `${ _.kebabCase(NAME) }.css`
     }),
     image(),
     
