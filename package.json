@@ -1,11 +1,16 @@
 {
   "name": "across-nodes-search-keywords",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/across-nodes-search-keywords.cjs.js",
   "module": "dist/across-nodes-search-keywords.esm.js",
   "unpkg": "dist/across-nodes-search-keywords.js",
-  "author": "",
-  "description": "",
+  "author": "q-jason",
+  "description": "跨节点/元素，搜索关键词",
+  "homepage": "https://github.com/q-jason/across-nodes-search-keywords",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/q-jason/across-nodes-search-keywords.git"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development rollup -c -w",
