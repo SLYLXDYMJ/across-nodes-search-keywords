@@ -1,6 +1,6 @@
 {
   "name": "across-nodes-search-keywords",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/across-nodes-search-keywords.cjs.js",
   "module": "dist/across-nodes-search-keywords.esm.js",
   "unpkg": "dist/across-nodes-search-keywords.js",
