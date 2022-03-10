@@ -9,7 +9,7 @@ npm i --save across-nodes-search-keywords
 or
 
 ```html
-<script src="./dist/search-test.js"></script>
+<script src="./dist/across-nodes-search-keywords.js"></script>
 ```
 
 ### 使用
