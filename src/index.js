@@ -16,7 +16,7 @@ export default function ({
   let matchTextNodes = getMatchTextNodes(textNodes, textInfoList, matchList)
   
   let matchResults = (function () {
-    var results = []
+    let results = []
     matchList.forEach(function (item, i) {
       results.push({
         startIndex: matchList[ i ].index,
@@ -34,6 +34,8 @@ export default function ({
   }
 }
 
+// 以下代码参考自：
+// https://blog.csdn.net/u010419337/article/details/110121224
 function getTextNodeList (dom) {
   const nodeList = [ ...dom.childNodes ]
   const textNodes = []
@@ -94,7 +96,11 @@ function getMatchTextNodes (textNodes, textList, matchList) {
       // font.innerText = text.substr(nodeMatchStartIdx, nodeMatchLength)
       // textNode.parentNode.replaceChild(font, textNode)
       
-      results[ i ].push(textNode)
+      // 这里排除内容为空的 text 节点
+      if (textNode.data.replace(/\s/ig, '')) {
+        results[ i ].push(textNode)
+      }
+      
       // console.log(textNode)
     }
   }

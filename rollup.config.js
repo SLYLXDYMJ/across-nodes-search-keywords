@@ -48,7 +48,7 @@ import { terser } from 'rollup-plugin-terser'
  *  umd iife 对外暴露的 window 属性名
  *  TODO: 请指定库名称，驼峰命名
  **/
-const NAME = 'searchTest'
+const NAME = 'acrossNodesSearchKeywords'
 
 const isPro = process.env.NODE_ENV === 'production'
 const isDev = !isPro

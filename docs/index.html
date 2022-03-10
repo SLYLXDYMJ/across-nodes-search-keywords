@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>template-rollup</title>
   <style>
+    body {
+      padding: 15px;
+      line-height: 1.8;
+    }
     font {
       color: #fff;
       background-color: red;
@@ -11,8 +15,22 @@
   </style>
 </head>
 <body>
-
+<div>
+  lll
+</div>
 <div id="root">
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque eum facilis fugiat id obcaecati porro? Aperiam aspernatur cum, ducimus laboriosam maiores molestiae molestias nemo odio, porro, quae voluptates voluptatibus?</div>
+  <div>Ab accusamus aliquid aperiam architecto aspernatur commodi corporis culpa, esse ex hic illo impedit ipsam laborum non officiis perferendis porro quas quia quibusdam quis sed ut veniam? Quaerat, quasi, sed.</div>
+  <div>A accusantium ad aliquam assumenda atque autem commodi dolorum est inventore iste labore laudantium magni maiores modi, mollitia nihil nulla numquam quia quibusdam repellendus sequi tempora voluptate. Assumenda, eius, voluptas!</div>
+  <div>Adipisci aspernatur at cumque cupiditate earum eos et illum iure maiores minima molestias mollitia natus necessitatibus, nisi officia pariatur perspiciatis recusandae repellat reprehenderit sit sunt velit voluptas voluptatum. Commodi, consequatur.</div>
+  <div>Dolorem, dolores fugiat pariatur praesentium quam quo quod sunt unde. Autem perferendis rerum sequi? Accusamus adipisci doloribus ducimus fuga id laboriosam obcaecati rem sunt suscipit veritatis! Accusantium assumenda inventore recusandae.</div>
+
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque eum facilis fugiat id obcaecati porro? Aperiam aspernatur cum, ducimus laboriosam maiores molestiae molestias nemo odio, porro, quae voluptates voluptatibus?</div>
+  <div>Ab accusamus aliquid aperiam architecto aspernatur commodi corporis culpa, esse ex hic illo impedit ipsam laborum non officiis perferendis porro quas quia quibusdam quis sed ut veniam? Quaerat, quasi, sed.</div>
+  <div>A accusantium ad aliquam assumenda atque autem commodi dolorum est inventore iste labore laudantium magni maiores modi, mollitia nihil nulla numquam quia quibusdam repellendus sequi tempora voluptate. Assumenda, eius, voluptas!</div>
+  <div>Adipisci aspernatur at cumque cupiditate earum eos et illum iure maiores minima molestias mollitia natus necessitatibus, nisi officia pariatur perspiciatis recusandae repellat reprehenderit sit sunt velit voluptas voluptatum. Commodi, consequatur.</div>
+  <div>Dolorem, dolores fugiat pariatur praesentium quam quo quod sunt unde. Autem perferendis rerum sequi? Accusamus adipisci doloribus ducimus fuga id laboriosam obcaecati rem sunt suscipit veritatis! Accusantium assumenda inventore recusandae.</div>
+
   <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque eum facilis fugiat id obcaecati porro? Aperiam aspernatur cum, ducimus laboriosam maiores molestiae molestias nemo odio, porro, quae voluptates voluptatibus?</div>
   <div>Ab accusamus aliquid aperiam architecto aspernatur commodi corporis culpa, esse ex hic illo impedit ipsam laborum non officiis perferendis porro quas quia quibusdam quis sed ut veniam? Quaerat, quasi, sed.</div>
   <div>A accusantium ad aliquam assumenda atque autem commodi dolorum est inventore iste labore laudantium magni maiores modi, mollitia nihil nulla numquam quia quibusdam repellendus sequi tempora voluptate. Assumenda, eius, voluptas!</div>
@@ -20,12 +38,12 @@
   <div>Dolorem, dolores fugiat pariatur praesentium quam quo quod sunt unde. Autem perferendis rerum sequi? Accusamus adipisci doloribus ducimus fuga id laboriosam obcaecati rem sunt suscipit veritatis! Accusantium assumenda inventore recusandae.</div>
 </div>
 
-<script src="../dist/search-test.js"></script>
+<script src="../dist/across-nodes-search-keywords.js"></script>
 <script>
-  var result = searchTest({
-    el: document.querySelector('#root'),
-    keywords: 'uptatibus?\n' +
-      'Ab accusamus aliquid aperia'
+  var result = window.acrossNodesSearchKeywords({
+    el: document.querySelector('body'),
+    keywords: 'd aperiam architecto aspernatur commodi corporis culpa, esse ex hic illo impedit ipsam laborum non officiis perferendis porro quas quia quibusdam quis sed ut veniam? Quaerat, quasi, sed.\n' +
+      'A accusantium ad aliquam assumenda atque autem commodi dolorum est inventore iste labore laudantium magni maiores modi, mollitia nihil nulla numqua'
   })
 
   console.log(result)
