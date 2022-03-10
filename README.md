@@ -1,6 +1,11 @@
 ## across-nodes-search-keywords
 > 跨节点/元素，搜索关键词
 
+
+### Demo
+> 请打开控制台
+https://q-jason.github.io/across-nodes-search-keywords/docs/
+
 ### 安装
 ```bash
 npm i --save across-nodes-search-keywords
